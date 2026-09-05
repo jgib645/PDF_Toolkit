@@ -34,12 +34,6 @@ The GUI is built with Tkinter. Run it with `python -m src.gui.main_window` from 
 * Standalone `.exe` packaging is not yet implemented — the tool currently runs from source only.
 
 ========================================================================
-## Credits & Acknowledgements
-
-Application icon / visual assets:
-- Converter icon designed by Freepik (https://www.freepik.com)
-
-========================================================================
 ## Roadmap
 
 * PyInstaller packaging for a standalone, double-clickable `.exe`
