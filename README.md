@@ -1,6 +1,6 @@
 # PDF Toolkit
 
-**Version 0.1 – Fri Sep 04 2026**
+**Version 1.0 – Fri Sep 04 2026**
 
 The PDF Toolkit is a small Windows‑only application that converts PDF documents into either DOCX or CSV files.
 
@@ -22,5 +22,6 @@ The GUI is built with Tkinter; simply double‑click the generated `.exe` (or ru
 ## Known issues
 * The application is Windows‑only; it relies on PowerShell for packaging and cannot be run natively on Linux/macOS without modifications.
 * OCR quality depends heavily on the source PDF. Scanned documents with low resolution may produce incomplete text or tables.
+* Color icons/emoji (stored as color font glyphs) may convert to black-and-white outlines due to underlying PDF rendering library limitations. Standard colored text and images are unaffected.
 
 Happy converting!
