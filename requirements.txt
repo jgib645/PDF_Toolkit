@@ -1,5 +1,5 @@
 pdf2docx
-camelot-py
+camelot-py==1.0.9
 pdfplumber
 pytesseract
 Pillow
@@ -7,3 +7,4 @@ python-docx
 pandas
 pytest
 reportlab
+pyinstaller # dev/build only
