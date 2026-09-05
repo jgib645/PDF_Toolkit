@@ -1,0 +1,9 @@
+pdf2docx
+camelot-py
+pdfplumber
+pytesseract
+Pillow
+python-docx
+pandas
+pytest
+reportlab
