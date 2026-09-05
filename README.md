@@ -2,13 +2,11 @@
 
 ========================================================================
 **Version 0.2 (in development) – Sep 2026**
-========================================================================
 
 The PDF Toolkit is a small Windows-only application that converts PDF documents into either DOCX or CSV files, with automatic fallback handling for scanned pages and borderless tables.
 
 ========================================================================
 ## How it works
-========================================================================
 
 * **PDF → DOCX** – Uses `pdf2docx` for text extraction. If a page has no text layer, the tool falls back to OCR via Tesseract and appends the recognized text to the resulting Word document. Tables detected via `pdfplumber` are appended as proper Word tables under a "Detected table (page X)" heading.
 * **PDF → CSV** – Tries to extract bordered tables with `camelot-py` first. For pages without visible table borders, you can manually specify which page numbers contain tables; those pages are then processed with `pdfplumber`'s text-based table detection instead of relying on unreliable automatic guessing. Pages with no tables (bordered or manually flagged) fall back to OCR, with recognized text written as a single-column row.
@@ -18,7 +16,6 @@ The GUI is built with Tkinter. Run it with `python -m src.gui.main_window` from 
 
 ========================================================================
 ## Requirements
-========================================================================
 
 * **Python 3.11**
 * Python packages listed in `requirements.txt`. Install with:
@@ -30,7 +27,6 @@ The GUI is built with Tkinter. Run it with `python -m src.gui.main_window` from 
 
 ========================================================================
 ## Known issues
-========================================================================
 
 * The application is Windows-only and hasn't been tested on Linux/macOS.
 * OCR quality depends heavily on the source PDF. Scanned documents with low resolution may produce incomplete text or tables.
@@ -40,17 +36,17 @@ The GUI is built with Tkinter. Run it with `python -m src.gui.main_window` from 
 
 ========================================================================
 ## Credits & Acknowledgements
-========================================================================
 
 Application icon / visual assets:
 - Converter icon designed by Freepik (https://www.freepik.com)
 
 ========================================================================
 ## Roadmap
-========================================================================
 
 * PyInstaller packaging for a standalone, double-clickable `.exe`
 * Extend manual table-page selection to the DOCX converter's table detection
 * CI pipeline for automated testing
+  
+========================================================================
 
 Happy converting!
