@@ -1,6 +1,5 @@
 # PDF Toolkit
 
-========================================================================
 **Version 0.2 (in development) – Sep 2026**
 
 The PDF Toolkit is a small Windows-only application that converts PDF documents into either DOCX or CSV files, with automatic fallback handling for scanned pages and borderless tables.
